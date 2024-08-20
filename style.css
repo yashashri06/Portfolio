@@ -1,0 +1,209 @@
+@import 'utilities.css';
+@font-face {
+    font-family: font1;
+    src: url(P);
+}
+
+:root{
+    --primary:#1740e2;
+    --Dark:#161616;
+    --Pure:#FFFFFF;
+    --Ternary:#898989;
+    --Light:#F2F2F2;
+    --hover:#6c10bc;
+    --beton: #4eaaf1;
+}
+
+
+
+body{
+   font-family: 'poppins' ,sans-serif; 
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smotthing:antialiased; 
+}
+
+header{
+    background: var(--Dark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 79% 95%, 0 100%);
+    
+}
+
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0  auto;
+}
+
+header nav .left a{
+    color:var(--Pure) ;
+    text-decoration: none;
+    margin-right: 1rem;
+    text-transform: uppercase;
+     transition: all .3s;
+     font-family: font1;
+}
+
+header nav .left a:hover{
+    color: var(--primary);
+}
+
+.img1{
+    height: 50px;
+    width: 50px;
+}
+
+
+header nav {
+    padding: 2rem 0;
+}
+
+header nav .logo{
+    margin-right: 3rem;
+}
+
+.btn{
+padding: 0.8rem 3rem;
+font-size: 1 rem;
+font-weight: 600;
+border: 2px solid transparent;
+cursor: pointer;
+text-transform: uppercase;
+
+}
+
+.btn-first{
+background: var(--primary);
+color: var(--secondary);
+transition: all 1s;
+}
+
+.btn-first:hover{
+background-color: transparent;
+border-color: var(--primary);
+color: var(--primary);
+
+}
+.img2{
+    height: 490px;
+    width: 450px;
+    margin-top: 1.7rem;
+}
+
+.hero{
+    padding: 4rem, 0;
+}
+
+ .name{
+    font-size: 1.8rem;
+    color: var(--Pure);
+    margin-bottom: 0.5rem;
+   
+}
+
+.RHS{
+    margin-left: 4rem;
+}
+.hero .RHS h1{
+    font-size: 4rem;
+    font-weight: 800;
+    text-shadow: #F2F2F2;
+    line-height: 1.1;
+    color: var(--Pure);
+    margin-bottom: 2rem;
+    
+}
+
+.hero .RHS h1 span{
+    color: var(--primary);
+}
+.p{
+    line-height: 1,7;
+    margin-bottom: 2rem;
+    color: var(--Pure);
+}
+
+
+.btn-second{
+    background: transparent;
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-second:hover{
+    background: var(--primary);
+    color:var(--secondary);
+    transition: all 1s;
+}
+
+.heading span{
+    color: var(--primary);
+}
+
+.heading{
+    color: #161616;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem 1rem 1rem 1rem;
+    padding: 1rem 0 0 0;
+    line-height: 0.5;
+}
+.heading + p{
+    color: #898989;
+    font-family: lato;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+section.skills .cardcontainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+padding-left: 200px;
+padding-right: 200px;
+
+  grid-column-gap: 2rem;
+  grid-row-gap: 1rem;
+  justify-content: space-around;
+}
+
+.card{
+    padding: 3rem 2rem;
+    border-radius: 10px;
+    -webkit-box-shadow: 13px 9px 24px -12px rgba(0,0,0,0.75);
+-moz-box-shadow: 13px 9px 24px -12px rgba(0,0,0,0.75);
+box-shadow: 13px 9px 24px -12px rgba(0,0,0,0.75);
+    /* width: 95px; */
+}
+
+.image{
+    height:100px;
+    width: 100px;
+}
+
+section.skills{
+    background-color: var(--Pure);
+}
+
+
+
+section.skills .cardcontainer .card{
+
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    
+
+
+}
+
+
+.hero .RHS .btn a{
+    text-decoration: none;
+    color: var(--Pure);
+}
